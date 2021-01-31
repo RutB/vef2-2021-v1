@@ -1,6 +1,5 @@
 <%- include('header') -%>
 
-  <main class="main">
     <%
       if(videos){
       videos.categories.forEach((x)=> {
@@ -14,7 +13,7 @@
               <a href="/<%=video.id%>" class="card__card">
                 <div class="card__image">
                   <img class="card__img" src="<%=video.poster%>" alt="<%=video.description%>"/>
-                  <span class="card__duration">Lenginnn</span>
+                  <span class="card__duration">Lengdinnn</span>
                 </div>
                 <div class="card__text">
                   <h3 class="card__videoTitle"><%=video.title%></h3>
@@ -27,10 +26,9 @@
       </section>
       <hr class="card__divider" />
     <%})} else {%>
-      <span class="error">Failed to get videos</span>
+      <span class="error">Fannst ekki</span>
     <%}%>
     
     
-  </main>
 
 <%- include('footer') -%>

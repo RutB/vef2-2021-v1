@@ -4,7 +4,7 @@ const express = require('express');
 const videos = require('./src/videos.js');
 
 const app = express();
-
+//er þetta ékki poottþétt
 // app.set('views', path.join(__dirname, 'views'));
  app.set('view engine', 'ejs');
 

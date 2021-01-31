@@ -47,7 +47,7 @@ function videoByIdList(req, res) {
 //   }
 
   async function list(req, res) {
-    const title = 'Fræðslumyndbandleigannn';
+    const title = 'Fræðslumyndbandleigan';
     let videos = getVideos('./videos.json').then((data) => {
       videos = JSON.parse(data);
       res.render('index', {title, videos});    //ath hér á eftir að búa til catch til að ná villum
@@ -59,6 +59,6 @@ function videoByIdList(req, res) {
 
 
 router.get('/', catchErrors(list));
-//router.get('/:id', catchErrors(videoByIdList));
+router.get('/:id', videoByIdList);
 
 module.exports = router;

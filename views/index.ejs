@@ -1,34 +1,33 @@
 <%- include('header') -%>
 
     <%
-      if(videos){
       videos.categories.forEach((x)=> {
     %>
-            <section class="card">
-              <h2 class="card__title"><%=x.title%></h2>
-              <div class="card__container">
+            <section class="cards">
+              <h2 class="cards__title"><%=x.title%></h2>
+              <div class="cards__container">
            <% x.videos.forEach((vid)=>{
                 let video = videos.videos[vid-1]    
             %>
-              <a href="/<%=video.id%>" class="card__card">
+              <a href="/<%=video.id%>" class="card__link">
                 <div class="card__image">
-                  <img class="card__img" src="<%=video.poster%>" alt="<%=video.description%>"/>
+                  <img class="card__img " src="<%=video.poster%>" alt="<%=video.description%>"/>
                   <span class="card__duration">Lengdinnn</span>
                 </div>
                 <div class="card__text">
                   <h3 class="card__videoTitle"><%=video.title%></h3>
-                  <span class="card__created">aldurinnnn</span>
+                  <span class="card__created">Það er svo langt síðan</span>
                   </div>
                 </a>
         
       <%  }) %>
+              </div>
         </div>
       </section>
       <hr class="card__divider" />
-    <%})} else {%>
-      <span class="error">Fannst ekki</span>
-    <%}%>
+    <%})%>
     
     
+
 
 <%- include('footer') -%>

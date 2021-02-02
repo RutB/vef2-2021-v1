@@ -5,7 +5,7 @@ const videos = require('./src/videos.js');
 
 const app = express();
 
- app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.locals.parseDate = (d) => {
   const date = new Date(d);

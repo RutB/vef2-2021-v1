@@ -14,9 +14,9 @@ Gögn skulu lesin úr `videos.json` skjali sem gefið er, og engar upplýsingar 
 
 Þegar vefur er opnaður skal lista upp alla flokka í þeirri röð sem þeir eru skilgreindir í `videos.json` ásamt öllum myndböndum sem eru í þeim flokki:
 
-* Plakat fyrir myndband
-* Lengd sem liggur ofan á plakati formuð í mínútur og sekúndur, t.d. `30:20` væri 30 mín og 20 sek, sjá fyrirmynd, í fyrirmynd er bakgrunnslitur `rgba(0, 0, 0, 0.5)`
-* Aldur myndbands formað eftir eftirfarandi reglum og mun á eintölu og fleirtölu (ekki þarf þó að gera ráð fyrir eintölu í 21, 31 o.s.fr.)
+- Plakat fyrir myndband
+- Lengd sem liggur ofan á plakati formuð í mínútur og sekúndur, t.d. `30:20` væri 30 mín og 20 sek, sjá fyrirmynd, í fyrirmynd er bakgrunnslitur `rgba(0, 0, 0, 0.5)`
+- Aldur myndbands formað eftir eftirfarandi reglum og mun á eintölu og fleirtölu (ekki þarf þó að gera ráð fyrir eintölu í 21, 31 o.s.fr.)
   - Ef aldur er meiri en eitt ár (365 dagar) er birt `Fyrir X ári/árum síðan`
   - Annars, ef aldur er meiri en mánuður (30 dagar) er birt `Fyrir X mánuði/mánuðum síðan`
   - Annars, ef aldur er meiri en vika (7 dagar) er birt `Fyrir X viku/vikum síðan`
@@ -61,27 +61,26 @@ Setja skal upp stylelint sem „lintar“ CSS eða Sass.
 
 Setja skal upp eftirfarandi:
 
-* `stylelint`
-* `eslint` til að linta JavaScript kóða
+- `stylelint`
+- `eslint` til að linta JavaScript kóða
 
 Þegar verkefni er metið er:
 
-* `npm install` keyrt fyrst sem sækir öll dependency
-* `npm start` á að keyra upp express vefþjón á porti `3000`
-* `npm test` sem á að keyra eslint og stylelint, og sýna engar villur
+- `npm install` keyrt fyrst sem sækir öll dependency
+- `npm start` á að keyra upp express vefþjón á porti `3000`
+- `npm test` sem á að keyra eslint og stylelint, og sýna engar villur
 
 Verkefnið skal innihalda `package.json` og `package-lock.json` sem innihalda öll notuð tól.
 
-Þegar verkefnið er sótt verður `npm install` keyrt á undan öllum öðrum skipunum.
-Setja skal upp Sass og stylelint með `stylelint-config-sass-guidelines` og `stylelint-config-standard` fyrir verkefnið.
+Þegar verkefnið er sótt verður `npm install`stylelint-config-standard` fyrir verkefnið.
 
 ## Mat
 
-* 20% Tól & linterar keyra skv. forskrift, snyrtilegur kóði
-* 20% Útlit skv. forskrift
-* 20% Express þjónn settur upp með EJS templateum
-* 20% Forsíðu virkni
-* 20% Videosíðu virkni
+- 20% Tól & linterar keyra skv. forskrift, snyrtilegur kóði
+- 20% Útlit skv. forskrift
+- 20% Express þjónn settur upp með EJS templateum
+- 20% Forsíðu virkni
+- 20% Videosíðu virkni
 
 ## Sett fyrir
 
@@ -93,10 +92,10 @@ Skila skal í Canvas í seinasta lagi fyrir lok dags miðvikudaginn 3. febrúar 
 
 Skilaboð skulu innihalda slóð á GitHub repo fyrir verkefni, og dæmatímakennurum skal hafa verið boðið í repo ([sjá leiðbeiningar](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)). Notendanöfn þeirra eru:
 
-* `jonnigs`
-* `mimiqkz`
-* `Steinalicious`
-* `zurgur`
+- `jonnigs`
+- `mimiqkz`
+- `Steinalicious`
+- `zurgur`
 
 Hver dagur eftir skil dregur verkefni niður um 10%, allt að 20% ef skilað laugardaginn 6. febrúar 2020 en þá lokar fyrir skil.
 

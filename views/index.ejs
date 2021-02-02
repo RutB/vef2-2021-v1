@@ -12,11 +12,11 @@
               <a href="/<%=video.id%>" class="card__link">
                 <div class="card__image">
                   <img class="card__img " src="<%=video.poster%>" alt="<%=video.description%>"/>
-                  <span class="card__duration">Lengdinnn</span>
+                  <span class="card__duration"><%=convertDuration(video.duration)%></span>
                 </div>
                 <div class="card__text">
                   <h3 class="card__videoTitle"><%=video.title%></h3>
-                  <span class="card__created">Það er svo langt síðan</span>
+                  <span class="card__created"><%=convertCreated(video.created)%></span>
                   </div>
                 </a>
         

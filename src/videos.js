@@ -56,8 +56,7 @@ function videoByIdList(req, res) {
       res.render('index', {title, videos});
     });
   }
-
-
+  
 router.get('/', catchErrors(list));
 router.get('/:id', videoByIdList);
 

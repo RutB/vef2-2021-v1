@@ -4,11 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "lint": "stylelint ./public/styles.css",
-    "eslint": "eslint *js",
-    "dev": "nodemon app.js",
-    "test": "npm run eslint"
+    "lint:stylelint": "stylelint ./styles/*.scss --syntax scss",
+    "lint": "concurrently npm:lint:*",
+    "lint:eslint": "eslint ./src",
+    "sass:build": "node-sass --source-map-embed ./styles/styles.scss ./public/styles.css",
+    "sass:watch": "node-sass --source-map-embed --watch ./styles/styles.scss ./public/styles.css",
+    "nodemon": "nodemon ./src/app.js",
+    "dev": "concurrently npm:nodemon npm:sass:*",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +21,8 @@
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "concurrently": "^5.3.0",
+    "node-sass": "^4.14.1",
     "nodemon": "^2.0.7",
     "stylelint": "^13.7.0",
     "stylelint-config-sass-guidelines": "^7.1.0",
